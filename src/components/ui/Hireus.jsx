@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHandsHelping } from "react-icons/fa";
 
-const HireUs = () => {
+const Hireus = () => {
   return (
     <div className="flex items-center justify-end relative">
       {/* Left side circle: transparent and dark green */}
@@ -49,4 +49,4 @@ const HireUs = () => {
   );
 };
 
-export default HireUs;
+export default Hireus;

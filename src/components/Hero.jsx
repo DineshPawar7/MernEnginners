@@ -1,6 +1,6 @@
 import React from "react";
 import Team from "../assets/team.jpg";
-import HireUs from "../components/ui/HireUs";
+import HireUs from "../components/ui/Hireus";
 
 export default function Hero() {
   return (
