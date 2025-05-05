@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 
-body{
-    background-color: black;
-}
+
+
+
+
+:root {
+    --font-primary: 'Magnolia Sans', sans-serif; 
+
+    --color-primary: #b9fd50;
+  }
+  
+  .font-primary {
+    font-family: var(--font-primary);
+  }
+
+
+  .color-primary {
+    color: var(--color-primary);
+  }

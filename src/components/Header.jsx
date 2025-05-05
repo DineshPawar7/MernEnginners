@@ -4,14 +4,13 @@ import Logo from '../assets/logo.png';
 
 const Header = () => {
   return (
-    <header className="bg-black text-white">
-      <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-4 md:px-8">
-        {/* Left - Logo */}
+    <header className="bg-black text-white border-b border-[#1e1e1e]">
+
+      <div className="max-w-7xl mx-auto flex justify-between items-center py-9 px-4 md:px-8">
         <div className="flex items-center">
           <img src={Logo} alt="Logo" className="h-8 w-auto" />
         </div>
 
-        {/* Middle - Navigation Links */}
         <nav className="hidden md:flex space-x-6">
           <Link to="/" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">Home</Link>
           <Link to="/about" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">Services</Link>
@@ -21,14 +20,12 @@ const Header = () => {
           <Link to="/policy" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">Contact us</Link>
         </nav>
 
-        {/* Right - Button */}
         <div className="hidden md:block">
           <button className="bg-[#b9fd50] text-black py-2 px-6 rounded-3xl">
             Let's Talk
           </button>
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button className="text-white focus:outline-none">
             <svg
