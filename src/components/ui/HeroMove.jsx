@@ -15,7 +15,7 @@ const HeroMove = () => {
   const scrollingServices = [...services, ...services];
 
   return (
-    <div className="mt-16 bg-lime-400 px-6 py-2 overflow-hidden" style={{ marginLeft: '0', marginRight: '0' }}>
+    <div className="mt-16 bg-brand px-6 py-2 overflow-hidden" style={{ marginLeft: '0', marginRight: '0' }}>
       <div className="relative w-full h-12 flex items-center">
         <motion.div
           className="absolute flex whitespace-nowrap"

@@ -1,0 +1,30 @@
+
+{
+    "mainTitle": "Your Own MERN Stack Development Agency",
+    "heading": "Where Your Ideas Meet",
+    "subheading": "MERN Experts",
+    "description": "We build modern, scalable web applications using the MERN Stack — delivering custom solutions that drive growth and user engagement.",
+    "serviceTagsDevelopment": [
+      "MERN Website Development",
+      "Responsive Website Development"
+    ],
+    "serviceTagsStrategy": [
+      "API Integration & Backend Development",
+      "SEO & Digital Strategy"
+    ],
+    "stats": [
+      {
+        "count": "850+",
+        "label": "Projects Completed"
+      },
+      {
+        "count": "18+",
+        "label": "Years of Experience"
+      },
+      {
+        "count": "500+",
+        "label": "Happy Customers"
+      }
+    ]
+  }
+  

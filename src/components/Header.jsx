@@ -13,11 +13,11 @@ const Header = () => {
 
         <nav className="hidden md:flex space-x-6">
           <Link to="/" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">Home</Link>
-          <Link to="/about" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">Services</Link>
-          <Link to="/services" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">Projects</Link>
-          <Link to="/contact" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">Blogs</Link>
-          <Link to="/contact" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">About us</Link>
-          <Link to="/policy" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">Contact us</Link>
+          <Link to="/services" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">Services</Link>
+          <Link to="/projects" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">Projects</Link>
+          <Link to="/blogs" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">Blogs</Link>
+          <Link to="/aboutus" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">About</Link>
+          <Link to="/contact" className="hover:text-[#b9fd50] px-4 py-2 rounded-md">Contact</Link>
         </nav>
 
         <div className="hidden md:block">

@@ -25,17 +25,15 @@
 
 .hero-first-title h1 {
   margin: 0;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
-  font-weight: normal;
-  line-height: 1.4;
+  color: var(--color-textWhite);
+  font-family: var(--font-primary);
+  font-size: var(--font-sub-title);
 }
 
 .hero-line {
   height: 2px;
   width: 15px;
-  background-color: #b9fd50;
+  background-color: var(--color-brand);
   margin-right: 0.75rem;
   flex-shrink: 0;
 }
@@ -60,15 +58,15 @@
 .text-lines h1,
 .hero-heading2 {
   margin: 2px 0;
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   line-height: 1.15;
-  font-size: 5rem;
+  font-size: var(--font-display);
   white-space: nowrap;
 }
 
 .hero-heading2 {
-  color: var(--color-primary, #b9fd50);
+  color: var(--color-brand);
 }
 
 .services-info-container {
@@ -100,7 +98,8 @@
 .tag {
   padding: 0.5rem 1.2rem;
   border-radius: 9999px;
-  font-size: 0.9rem;
+  color: var(--color-textWhite);
+  font-size: var(--font-sub-title);
   border-left: 1px solid white;
   border-right: 1px solid white;
   display: inline-block;
@@ -128,7 +127,7 @@
   background: linear-gradient(
     to bottom,
     transparent,
-    rgba(163, 230, 53, 0.7),
+    var(--color-brand),
     transparent
   );
   align-self: center;
@@ -140,9 +139,9 @@
 }
 
 .service-description p {
-  font-family: var(--font-primary, "Roboto", sans-serif);
-  color: #d1d5db;
-  font-size: 1.2rem;
+  font-family: var(--text-primary);
+  color: var(--color-textWhite);
+  font-size: var(--font-sub-title);
   line-height: 1.75;
 }
 

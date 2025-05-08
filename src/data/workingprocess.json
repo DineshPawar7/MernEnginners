@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Client Requirement Analysis",
+      "icon": "Lightbulb",
+      "step": "Step 1",
+      "description": "We understand your goals and define clear, actionable requirements for scalable MERN stack solutions."
+    },
+    {
+      "title": "UI/UX Design & Wireframing",
+      "icon": "Ruler",
+      "step": "Step 2",
+      "description": "We design interactive wireframes and user-centric prototypes to ensure a seamless frontend experience using React.js."
+    },
+    {
+      "title": "Development & QA Testing",
+      "icon": "ClipboardList",
+      "step": "Step 3",
+      "description": "We build robust APIs with Node.js, connect MongoDB, and perform thorough testing for quality delivery."
+    }
+  ]
+  

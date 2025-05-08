@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "MERN Stack Development",
+      "tags": [
+        "Full-Stack JavaScript Solutions",
+        "E-Commerce Platforms",
+        "Custom CRM Systems",
+        "Admin Dashboards"
+      ],
+      "content": "Harness the power of the MERN stack (MongoDB, Express, React, Node.js) to build high-performance, scalable web applications. We specialize in e-commerce systems, dynamic dashboards, and custom enterprise solutions."
+    },
+    {
+      "id": 2,
+      "title": "Website Development",
+      "tags": [
+        "Corporate Websites",
+        "Single-Page Applications (SPA)",
+        "Backend Integration",
+        "Responsive Frontend Design"
+      ],
+      "content": "Delivering modern, responsive websites tailored for your business needs. We build fast-loading SPAs and full-featured websites using Angular, Vue, Laravel, and more."
+    },
+    {
+      "id": 3,
+      "title": "SaaS Platform Development",
+      "tags": [
+        "Cloud-Ready Architecture",
+        "Subscription & Billing Systems",
+        "User Role Management",
+        "Scalable Multi-Tenant Solutions"
+      ],
+      "content": "We craft robust SaaS platforms designed for scale. From subscription billing to user access control, our solutions are secure, maintainable, and built to grow with your business."
+    },
+    {
+      "id": 4,
+      "title": "Website Maintenance & Support",
+      "tags": [
+        "Security Monitoring",
+        "Performance Optimization",
+        "Bug Fixes & Troubleshooting",
+        "Content & Feature Updates"
+      ],
+      "content": "Keep your website running smoothly and securely. Our ongoing maintenance services ensure optimal performance, regular updates, and proactive support."
+    },
+    {
+      "id": 5,
+      "title": "API Development & Integration",
+      "tags": [
+        "RESTful or GraphQL APIs",
+        "Secure data transmission",
+        "Third-party service integrations"
+      ],
+      "content": "Develop fast, secure, and scalable APIs tailored to your application needs. We offer REST and GraphQL API solutions with smooth third-party integrations."
+    }
+  ]
+  
