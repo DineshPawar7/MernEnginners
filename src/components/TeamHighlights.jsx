@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaProjectDiagram, FaCertificate } from 'react-icons/fa';
+import Heading from './ui/Heading';
 
 const teamHighlights = [
   {
@@ -31,12 +32,18 @@ const teamHighlights = [
 export default function TeamJourneySection() {
   return (
     <section className="py-16 bg-white text-center">
-      <p className="text-lime-500 text-sm uppercase tracking-wide">— Our Team</p>
-      <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-10">
-        Our Journey to <span className="text-lime-400">Team Excellence</span>
-      </h2>
+      
 
-      <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto px-6">
+      <Heading
+                  level={1}
+                  variant="hero"
+                  tag="Our Team"
+                  firstText="Our Journey to"
+                  secondText="Team Excellence"
+                  
+                />
+
+      <div className="grid md:grid-cols-2 gap-10 max-w-5xl mt-9 mx-auto px-6">
         {teamHighlights.map((item, index) => (
           <motion.div
             key={index}
