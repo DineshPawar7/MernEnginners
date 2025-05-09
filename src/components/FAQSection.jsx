@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
-import HeroMove from './ui/HeroMove';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import HeroMove from "./ui/HeroMove";
+import Heading from "./ui/Heading";
 
 const FAQItem = ({ question, answer, isOpen, toggle }) => {
   return (
@@ -23,9 +24,9 @@ const FAQItem = ({ question, answer, isOpen, toggle }) => {
         {isOpen && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
+            animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.35, ease: 'easeInOut' }}
+            transition={{ duration: 0.35, ease: "easeInOut" }}
             className="px-5 py-4 bg-gray-50 text-sm sm:text-base text-gray-700"
           >
             {answer}
@@ -40,59 +41,69 @@ const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
-    setOpenIndex(prev => (prev === index ? null : index));
+    setOpenIndex((prev) => (prev === index ? null : index));
   };
 
   const faqData = [
     {
-      question: 'What services does your digital agency offer?',
-      answer: 'We offer a wide range of digital marketing services including SEO, social media marketing, content creation, PPC advertising, and web development.',
+      question: "What services does your MERN development agency offer?",
+      answer:
+        "We specialize in full-stack web development using the MERN stack (MongoDB, Express.js, React, and Node.js). Our services include custom web application development, API development, e-commerce solutions, and frontend/backend development.",
     },
     {
-      question: 'What industries do you specialize in?',
-      answer: 'We work with clients across various industries, including e-commerce, healthcare, technology, and finance. Our diverse experience allows us to tailor strategies to specific business needs.',
+      question: "What industries do you specialize in?",
+      answer:
+        "We work with clients across various industries, including e-commerce, education, healthcare, fintech, and startups. Our experience with diverse domains enables us to build tailored, scalable, and robust solutions.",
     },
     {
-      question: 'What is your process for working with clients?',
-      answer: 'Our process involves an initial consultation, strategy development, implementation, regular reporting, and ongoing optimization to ensure client goals are met.',
+      question: "What is your process for working with clients?",
+      answer:
+        "Our process includes understanding your business needs, designing a solution, developing the application with the latest technologies, testing, deploying, and providing ongoing maintenance and support to ensure long-term success.",
     },
     {
-      question: 'What platforms and technologies do you specialize in?',
-      answer: 'We specialize in platforms like Google Ads, Facebook Ads, Instagram, LinkedIn, WordPress, Shopify, and utilize various analytics and marketing automation tools.',
+      question: "What platforms and technologies do you specialize in?",
+      answer:
+        "We specialize in the MERN stack (MongoDB, Express.js, React, Node.js), as well as related technologies like Redux, GraphQL, WebSockets, REST APIs, and cloud platforms like AWS and Heroku for deployment.",
     },
     {
-      question: 'How can your agency help my business grow online?',
-      answer: 'We drive online growth by increasing visibility, attracting targeted traffic, improving user engagement, generating leads, and ultimately boosting sales and revenue.',
+      question: "How can your agency help my business grow online?",
+      answer:
+        "We help businesses scale by building high-performance web applications that are user-friendly, secure, and optimized for speed. Our solutions aim to enhance your online presence, improve customer engagement, and drive business growth.",
     },
     {
-      question: 'How do you handle communication and feedback during a project?',
-      answer: 'We maintain transparent and regular communication through email, calls, and project management tools. We also value client feedback and incorporate it to ensure the project aligns with their vision.',
+      question:
+        "How do you handle communication and feedback during a project?",
+      answer:
+        "We prioritize clear and continuous communication throughout the project via email, calls, and project management tools like Jira or Trello. We value client feedback and ensure that the project evolves based on your requirements and feedback.",
     },
   ];
 
   return (
     <>
-    <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center mb-12">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">Questions? Look here.</h2>
-        <p className="mt-2 text-gray-500 text-sm sm:text-base">Frequently Asked Questions</p>
-      </div>
-      <div className="max-w-4xl mx-auto">
-        {faqData.map((faq, index) => (
-          <FAQItem
-            key={index}
-            question={faq.question}
-            answer={faq.answer}
-            isOpen={openIndex === index}
-            toggle={() => toggleFAQ(index)}
+      <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <Heading
+            level={1}
+            variant="hero"
+            tag="FAQs"
+            firstText="Questions? Look here"
           />
-        ))}
-      </div>
-    </section>
+        </div>
+        <div className="max-w-4xl mx-auto font-work">
+          {faqData.map((faq, index) => (
+            <FAQItem
+              key={index}
+              question={faq.question}
+              answer={faq.answer}
+              isOpen={openIndex === index}
+              toggle={() => toggleFAQ(index)}
+            />
+          ))}
+        </div>
+      </section>
 
-
-    <HeroMove />
-</>
+      <HeroMove />
+    </>
   );
 };
 

@@ -41,10 +41,10 @@ const WorkingProcess = () => {
                   </span>
                 </div>
               </div>
-              <h3 className="text-subTitle font-semibold text-gray-800 mb-2">
+              <h3 className="text-subTitle font-semibold font-roboto text-grayHeading mb-2">
                 {step.title}
               </h3>
-              <p className="text-secondaryText text-gray-600 max-w-xs mx-auto">
+              <p className="text-baseText text-textGray font-work max-w-xs mx-auto">
                 {step.description}
               </p>
             </motion.div>

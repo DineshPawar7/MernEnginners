@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
-  FaFacebookF, FaTwitter, FaPinterestP, FaInstagram, FaLinkedinIn
+  FaFacebookF, FaTwitter, FaGithubSquare, FaInstagram, FaLinkedinIn
 } from 'react-icons/fa';
 
 const Footer = () => {
@@ -11,11 +11,11 @@ const Footer = () => {
   };
 
   const socialIcons = [
-    { icon: FaFacebookF, link: '#' },
-    { icon: FaTwitter, link: '#' },
-    { icon: FaPinterestP, link: '#' },
-    { icon: FaInstagram, link: '#' },
-    { icon: FaLinkedinIn, link: '#' },
+    { icon: FaFacebookF, link: 'https://www.facebook.com/profile.php?id=100091281086250' },
+    { icon: FaTwitter, link: 'https://x.com/pawar_dine52549' },
+    { icon: FaGithubSquare, link: 'https://github.com/DineshPawar7' },
+    { icon: FaInstagram, link: 'https://www.instagram.com/mernengineers' },
+    { icon: FaLinkedinIn, link: 'https://www.linkedin.com/company/mernengineers' },
   ];
 
   return (
@@ -28,11 +28,11 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 md:grid-cols-3 gap-12">
         <div className="space-y-4">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-full bg-lime-400 flex items-center justify-center text-black font-bold text-lg">D</div>
-            <h3 className="text-xl font-semibold text-lime-400">Digital Agency.</h3>
+            <div className="w-10 h-10 rounded-full bg-brand flex items-center justify-center text-black font-bold text-lg">M</div>
+            <h3 className="text-xl font-semibold text-brand">MERN Engineers</h3>
           </div>
-          <p className="text-sm text-gray-300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p className="text-baseText text-gray-300 font-work">
+             A professional freelance web developer, delivering high-quality websites for businesses of all sizes, from startups to established companies.
           </p>
           <div className="flex space-x-4">
             {socialIcons.map((item, index) => (
@@ -51,37 +51,37 @@ const Footer = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
-            <h4 className="text-md font-semibold text-lime-400 mb-3">Navigation</h4>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li><a href="#" className="hover:text-lime-400 transition-colors">Home</a></li>
-              <li><a href="#" className="hover:text-lime-400 transition-colors">Services</a></li>
-              <li><a href="#" className="hover:text-lime-400 transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-lime-400 transition-colors">Projects</a></li>
-              <li><a href="#" className="hover:text-lime-400 transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-lime-400 transition-colors">FAQs</a></li>
+            <h4 className="text-md font-semibold text-brand mb-3">Navigation</h4>
+            <ul className="space-y-2 text-baseText text-gray-300 font-work">
+              <li><a href="#" className="hover:text-brand transition-colors">Home</a></li>
+              <li><a href="#" className="hover:text-brand transition-colors">Services</a></li>
+              <li><a href="#" className="hover:text-brand transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-brand transition-colors">Projects</a></li>
+              <li><a href="#" className="hover:text-brand transition-colors">Careers</a></li>
+              <li><a href="#" className="hover:text-brand transition-colors">FAQs</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-md font-semibold text-lime-400 mb-3">Contact</h4>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li>+0123-456-789</li>
-              <li><a href="https://www.example.com" className="hover:text-lime-400">www.example.com</a></li>
-              <li><a href="mailto:example@gmail.com" className="hover:text-lime-400">example@gmail.com</a></li>
-              <li>4517 Washington Ave.<br />Manchester, Kentucky<br />39495</li>
+            <h4 className="text-baseText font-semibold text-brand mb-3">Contact</h4>
+            <ul className="space-y-2 text-baseText font-work text-gray-300">
+              <li>+91 72640 63562</li>
+              <li><a href="mernengineers.netlify.app" className="hover:text-brand">mernengineers.netlify.app</a></li>
+              <li><a href="mailto:dineshpawarr07@gmail.com" className="hover:text-brand">dineshpawarr07@gmail.com</a></li>
+              <li>Chhatrapati Sambhajinagar<br />Maharashtra, India<br />431116</li>
             </ul>
           </div>
         </div>
 
         <div className="space-y-4">
-          <h4 className="text-md font-semibold text-lime-400 mb-3">Get the latest information</h4>
+          <h4 className="text-md font-semibold text-brand mb-3">Get the latest information</h4>
           <div className="flex">
             <input
               type="email"
               placeholder="Email address"
-              className="bg-gray-700 text-white rounded-l-md py-2 px-4 w-full focus:outline-none focus:ring-2 focus:ring-lime-400"
+              className="bg-gray-700 text-white rounded-l-md py-2 px-4 w-full focus:outline-none focus:ring-2 focus:ring-brand"
             />
             <motion.button
-              className="bg-lime-400 text-black rounded-r-md py-2 px-4 hover:bg-lime-300 transition duration-300"
+              className="bg-brand text-black rounded-r-md py-2 px-4 hover:bg-lime-300 transition duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -95,11 +95,11 @@ const Footer = () => {
 
       <div className="border-t border-gray-800 py-4 mt-10">
         <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
-          <p>&copy; 2024 Digital Agency. All Rights Reserved.</p>
+          <p>&copy; 2025 MERN Engineers. All Rights Reserved.</p>
           <div className="flex flex-wrap items-center gap-3">
-            <a href="#" className="hover:text-lime-400">User Terms & Conditions</a>
+            <a href="#" className="hover:text-brand">User Terms & Conditions</a>
             <span className="text-gray-600">|</span>
-            <a href="#" className="hover:text-lime-400">Privacy Policy</a>
+            <a href="#" className="hover:text-brand">Privacy Policy</a>
           </div>
         </div>
       </div>

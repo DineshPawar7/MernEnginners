@@ -21,9 +21,16 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:block">
-          <button className="bg-[#b9fd50] text-black py-2 px-6 rounded-3xl">
-            Let's Talk
-          </button>
+          <a
+  href="https://wa.me/917264063562"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="bg-[#b9fd50] text-black py-2 px-6 rounded-3xl">
+    Let's Talk
+  </button>
+</a>
+
         </div>
 
         <div className="md:hidden">
