@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { FaLinkedin, FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 import Heading from "./Heading";
+import myPhoto from "../../assets/my-photo.png";
 
 const teamMembers = [
   {
     name: "Dinesh Pawar",
     role: "MERN Stack Developer",
-    img: "src/assets/my-photo.png",
+    img: myPhoto,
     social: [
       { icon: FaLinkedin, link: "https://www.linkedin.com/in/dineshpawar07/" },
       { icon: FaTwitter, link: "https://x.com/pawar_dine52549" },
