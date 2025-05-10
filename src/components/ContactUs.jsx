@@ -18,12 +18,12 @@ export default function ContactUs() {
     e.preventDefault();
 
     emailjs
-  .sendForm(
-    import.meta.env.VITE_EMAILJS_SERVICE_ID,
-    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-    form.current,
-    import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-  )
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
 
       .then(
         (result) => {
@@ -56,11 +56,7 @@ export default function ContactUs() {
             tagClassname="text-textWhite"
           />
 
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            className="space-y-5 mt-8"
-          >
+          <form ref={form} onSubmit={sendEmail} className="space-y-5 mt-8">
             <div className="grid md:grid-cols-2 gap-5">
               <input
                 type="text"
@@ -119,7 +115,6 @@ export default function ContactUs() {
           </form>
         </div>
 
-        {/* Contact Info Card */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -127,26 +122,77 @@ export default function ContactUs() {
           className="bg-brand text-black rounded-xl p-8 shadow-xl"
         >
           <div className="mb-6">
-            <h3 className="font-bold text-subTitle mb-2 font-roboto">Address</h3>
-            <p className="text-secondaryText">Chhatrapati Sambhajinagar, Maharashtra, India 431116</p>
+            <h3 className="font-bold text-subTitle mb-2 font-roboto">
+              Address
+            </h3>
+            <p className="text-secondaryText">
+              Chhatrapati Sambhajinagar, Maharashtra, India 431116
+            </p>
           </div>
           <div className="mb-6">
-            <h3 className="font-bold text-subTitle mb-2 font-roboto">Contact</h3>
-            <p className="text-secondaryText font-work">Phone: +91 72640 63562</p>
-            <p className="text-secondaryText font-work">Email: work.mernengineers@gmail.com</p>
+            <h3 className="font-bold text-subTitle mb-2 font-roboto">
+              Contact
+            </h3>
+            <p className="text-secondaryText font-work">
+              Phone: +91 72640 63562
+            </p>
+            <p className="text-secondaryText font-work">
+              Email: work.mernengineers@gmail.com
+            </p>
           </div>
           <div className="mb-6">
-            <h3 className="font-bold text-subTitle mb-2 font-roboto">Open Time</h3>
-            <p className="text-secondaryText font-work">Monday - Sunday : 9:00 AM – 11:00 PM</p>
+            <h3 className="font-bold text-subTitle mb-2 font-roboto">
+              Open Time
+            </h3>
+            <p className="text-secondaryText font-work">
+              Monday - Sunday : 9:00 AM – 11:00 PM
+            </p>
           </div>
           <div>
-            <h3 className="font-bold text-subTitle mb-2 font-roboto">Stay Connected</h3>
+            <h3 className="font-bold text-subTitle mb-2 font-roboto">
+              Stay Connected
+            </h3>
             <div className="flex gap-4 mt-2 text-lg">
-              <a href="https://www.facebook.com/profile.php?id=100091281086250" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a>
-              <a href="https://x.com/pawar_dine52549" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter /></a>
-              <a href="https://github.com/DineshPawar7" target="_blank" rel="noopener noreferrer" aria-label="Github"><FaGithubSquare /></a>
-              <a href="https://www.instagram.com/mernengineers" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
-              <a href="https://www.youtube.com/@DineshPawar_.07" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><FaYoutube /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100091281086250"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://x.com/pawar_dine52549"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="https://github.com/DineshPawar7"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Github"
+              >
+                <FaGithubSquare />
+              </a>
+              <a
+                href="https://www.instagram.com/mernengineers"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.youtube.com/@DineshPawar_.07"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <FaYoutube />
+              </a>
             </div>
           </div>
         </motion.div>

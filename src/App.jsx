@@ -6,8 +6,13 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
-import AboutUs from './pages/AboutUs';
+import OurTeam from './pages/OurTeam';
 import Contact from './pages/Contact';
+import MERNDevelopment from './pages/ServicesDeatils/MERNDevelopment';
+import APIDevelopment from './pages/ServicesDeatils/APIDevelopment';
+import SaaSDevelopment from './pages/ServicesDeatils/SaaSDevelopment';
+import WebsiteDevelopment from './pages/ServicesDeatils/WebsiteDevelopment';
+import WebsiteMaintenance from './pages/ServicesDeatils/WebsiteMaintenance';
 
 function App() {
   return (
@@ -18,9 +23,14 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/team" element={<OurTeam />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/policy" element={<Policy />} />
+        <Route path="/merndevelopment" element={<MERNDevelopment />} />
+        <Route path="/apidevelopment" element={<APIDevelopment />} />
+        <Route path="/saasdevelopment" element={<SaaSDevelopment />} />
+        <Route path="/websitedevelopment" element={<WebsiteDevelopment />} />
+        <Route path="/websitemaintenance" element={<WebsiteMaintenance />} />
       </Routes>
     </>
   );

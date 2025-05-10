@@ -255,7 +255,7 @@
   }
 
   .hero-first-title h1 {
-     font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .text-lines h1,
@@ -265,18 +265,18 @@
 
   .tag {
     font-size: 0.9rem;
-     padding: 0.5rem 1.2rem;
+    padding: 0.5rem 1.2rem;
   }
 
   .service-description {
-     max-width: 450px;
+    max-width: 450px;
   }
   .service-description p {
-     font-size: 1.15rem;
-     line-height: 1.75;
+    font-size: 1.15rem;
+    line-height: 1.75;
   }
 
-   .team-stat-count {
+  .team-stat-count {
     font-size: 2rem;
   }
 
@@ -284,9 +284,18 @@
     font-size: 1.15rem;
   }
 
-   .sparkle-wrapper1 { left: -8%; transform: scale(1.25) translateY(-50%); }
-   .sparkle-wrapper2 { left: -6%; transform: scale(0.75) translateY(-50%); }
-   .sparkle-wrapper3 { left: -4%; transform: scale(1.7) translateY(-50%); }
+  .sparkle-wrapper1 {
+    left: -8%;
+    transform: scale(1.25) translateY(-50%);
+  }
+  .sparkle-wrapper2 {
+    left: -6%;
+    transform: scale(0.75) translateY(-50%);
+  }
+  .sparkle-wrapper3 {
+    left: -4%;
+    transform: scale(1.7) translateY(-50%);
+  }
 }
 
 @media (max-width: 1023.98px) {
@@ -300,24 +309,24 @@
     font-size: 4rem;
   }
 
-   .services-info-container {
-     gap: 2rem;
-     margin-top: 3rem;
-   }
+  .services-info-container {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
 
-   .service-tags {
-     gap: 1rem;
-   }
+  .service-tags {
+    gap: 1rem;
+  }
 
-   .vertical-separator {
-       height: 100px;
-   }
+  .vertical-separator {
+    height: 100px;
+  }
 
   .service-description {
     max-width: 45%;
   }
 
-   .service-description p {
+  .service-description p {
     font-size: 1.1rem;
     line-height: 1.7;
   }
@@ -335,7 +344,7 @@
     padding: 1.2rem 1.5rem;
   }
 
-   .team-stat-count {
+  .team-stat-count {
     font-size: 1.8rem;
   }
 
@@ -351,12 +360,12 @@
   .sparkle-wrapper2 {
     top: 40%;
     left: -8%;
-     transform: scale(0.7) translateY(-50%);
+    transform: scale(0.7) translateY(-50%);
   }
   .sparkle-wrapper3 {
     top: 70%;
     left: -5%;
-     transform: scale(1.6) translateY(-50%);
+    transform: scale(1.6) translateY(-50%);
   }
 }
 
@@ -375,14 +384,14 @@
   }
 
   .hero-subhead {
-     flex-direction: column;
-     align-items: center;
-     text-align: center;
-     gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
   }
 
   .text-lines {
-     align-items: center;
+    align-items: center;
   }
 
   .text-lines h1,
@@ -406,11 +415,11 @@
   }
 
   .service-tags .flex {
-     justify-content: center;
-     gap: 0.5rem;
+    justify-content: center;
+    gap: 0.5rem;
   }
 
-   .tag {
+  .tag {
     font-size: 0.85rem;
     padding: 0.4rem 1.1rem;
   }
@@ -425,10 +434,10 @@
     text-align: center;
   }
 
-   .service-description p {
+  .service-description p {
     font-size: 1.05rem;
     line-height: 1.6;
-   }
+  }
 
   .team-section {
     flex-direction: column;
@@ -443,10 +452,10 @@
   }
 
   .team-image-container {
-     height: auto;
+    height: auto;
   }
 
-   .team-image {
+  .team-image {
     height: auto;
   }
 
@@ -455,10 +464,10 @@
     max-width: 350px;
   }
 
-   .team-stats-box {
-     flex-direction: row;
-     justify-content: space-around;
-     text-align: center;
+  .team-stats-box {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
   }
 
   .team-stat-item {
@@ -479,11 +488,19 @@
     font-size: 1rem;
   }
 
-   .sparkle-wrapper1 { left: -6%; transform: scale(0.9) translateY(-50%); }
-   .sparkle-wrapper2 { left: -5%; transform: scale(0.6) translateY(-50%); }
-   .sparkle-wrapper3 { left: -3%; transform: scale(1.2) translateY(-50%); }
+  .sparkle-wrapper1 {
+    left: -6%;
+    transform: scale(0.9) translateY(-50%);
+  }
+  .sparkle-wrapper2 {
+    left: -5%;
+    transform: scale(0.6) translateY(-50%);
+  }
+  .sparkle-wrapper3 {
+    left: -3%;
+    transform: scale(1.2) translateY(-50%);
+  }
 }
-
 
 @media (max-width: 639.98px) {
   .hero {
@@ -505,13 +522,13 @@
     padding: 0.4rem 1rem;
   }
 
-   .service-description p {
+  .service-description p {
     font-size: 1rem;
-   }
+  }
 
-   .team-stats-box {
-     flex-direction: column;
-     text-align: center;
+  .team-stats-box {
+    flex-direction: column;
+    text-align: center;
   }
 
   .team-stat-item {
@@ -531,21 +548,21 @@
     font-size: 0.9rem;
   }
 
-   .sparkle-wrapper1 {
-      top: 20%;
-      left: -8%;
-      transform: scale(0.8) translateY(-50%);
-    }
-    .sparkle-wrapper2 {
-      top: 45%;
-      left: -6%;
-      transform: scale(0.5) translateY(-50%);
-    }
-    .sparkle-wrapper3 {
-      top: 70%;
-      left: -4%;
-      transform: scale(1.1) translateY(-50%);
-    }
+  .sparkle-wrapper1 {
+    top: 20%;
+    left: -8%;
+    transform: scale(0.8) translateY(-50%);
+  }
+  .sparkle-wrapper2 {
+    top: 45%;
+    left: -6%;
+    transform: scale(0.5) translateY(-50%);
+  }
+  .sparkle-wrapper3 {
+    top: 70%;
+    left: -4%;
+    transform: scale(1.1) translateY(-50%);
+  }
 }
 
 @media (max-width: 479.98px) {

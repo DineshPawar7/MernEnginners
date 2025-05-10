@@ -12,25 +12,25 @@ const teamHighlights = [
     year: "2024",
     title: "GitHub Activity",
     desc: "Our developers maintain strong GitHub profiles with active open-source contributions and collaborative repos.",
-    icon: <FaGithub className="text-5xl text-lime-500" />,
+    icon: <FaGithub className="text-5xl text-brand" />,
   },
   {
     year: "2024",
     title: "LinkedIn Recognition",
     desc: "Each team member holds an established professional presence on LinkedIn, reflecting verified skills and endorsements.",
-    icon: <FaLinkedin className="text-5xl text-lime-500" />,
+    icon: <FaLinkedin className="text-5xl text-brand" />,
   },
   {
     year: "2023",
     title: "Certified Engineers",
     desc: "Our engineers hold BTech degrees in Computer Science and are certified in modern web technologies and frameworks.",
-    icon: <FaCertificate className="text-5xl text-lime-500" />,
+    icon: <FaCertificate className="text-5xl text-brand" />,
   },
   {
     year: "2022",
     title: "Project Proven Experience",
     desc: "We’ve successfully delivered numerous frontend and full-stack projects for clients globally, with measurable results.",
-    icon: <FaProjectDiagram className="text-5xl text-lime-500" />,
+    icon: <FaProjectDiagram className="text-5xl text-brand" />,
   },
 ];
 

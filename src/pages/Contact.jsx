@@ -1,32 +1,27 @@
-import React from 'react'
-import HeroMove from '../components/ui/HeroMove'
-import ContactUs from '../components/ContactUs'
-import Testimonials from '../components/Testimonials'
-import Footer from '../components/Footer'
-import OurProjects from '../components/OurProjects'
+import React from "react";
+import HeroMove from "../components/ui/HeroMove";
+import ContactUs from "../components/ContactUs";
+import Footer from "../components/Footer";
+import Breadcrumb from "../components/ui/Breadcrumb";
 
 const Contact = () => {
+  const breadcrumbPath = [
+    { label: "Home", href: "/" },
+    { label: "Contact", href: "/contact" },
+  ];
   return (
     <div>
-        <div className='text-white bg-black pt-9 pb-9'>
-            <h1 className='justify-center item-center flex'>Projects</h1>
-            <p className='flex justify-center item-center'>Home / Contact</p>
-        </div>
+      <div>
+        <Breadcrumb path={breadcrumbPath} heading="Contact Us" />
+      </div>
 
+      <ContactUs />
 
-        <HeroMove />
+      <HeroMove />
 
-        <div className='bg-white'>
-        <OurProjects />
-        </div>
-
-        <ContactUs />
-
-        <Testimonials />
-
-        <Footer />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -48,8 +48,6 @@ export default function OurProjects() {
           />
         </motion.div>
 
-        
-
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
           variants={containerVariants}
@@ -104,28 +102,23 @@ export default function OurProjects() {
           ))}
         </motion.div>
 
-
-
         <motion.div
-  className="flex justify-center items-center flex-col mt-20 text-center"
-  initial={{ scale: 0.8, opacity: 0 }}
-  animate={{ scale: 1, opacity: 1 }}
-  transition={{ delay: 0.3, duration: 0.6 }}
->
-  <div></div>
-  <motion.button
-    onClick={() => setShowAll(!showAll)}
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="bg-brand hover:bg-lime-500 text-black font-medium px-6 py-2 rounded-full flex items-center gap-2"
-  >
-    {showAll ? "Show Less" : "View All Projects"}
-    <span className="text-2xl leading-none">+</span>
-  </motion.button>
-</motion.div>
-
-
-
+          className="flex justify-center items-center flex-col mt-20 text-center"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+        >
+          <div></div>
+          <motion.button
+            onClick={() => setShowAll(!showAll)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-brand hover:bg-lime-500 text-black font-medium px-6 py-2 rounded-full flex items-center gap-2"
+          >
+            {showAll ? "Show Less" : "View All Projects"}
+            <span className="text-2xl leading-none">+</span>
+          </motion.button>
+        </motion.div>
       </motion.section>
 
       <HeroMove />

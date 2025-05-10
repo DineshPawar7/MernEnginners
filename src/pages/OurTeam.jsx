@@ -1,24 +1,24 @@
 import React from "react";
-import OurServices from "../components/OurServices";
-import ContactUs from "../components/ContactUs";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/ui/Breadcrumb";
+import Team from "../components/ui/Team";
+import TeamJourneySection from "../components/TeamHighlights";
 
-const Services = () => {
+const OurTeam = () => {
   const breadcrumbPath = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
+    { label: "Team", href: "/team" },
   ];
   return (
     <div>
       <div>
-        <Breadcrumb path={breadcrumbPath} heading="Services" />
+        <Breadcrumb path={breadcrumbPath} heading="Our Team" />
       </div>
 
-      <OurServices />
+      <TeamJourneySection />
 
-      <ContactUs />
+      <Team />
 
       <Testimonials />
 
@@ -27,4 +27,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default OurTeam;

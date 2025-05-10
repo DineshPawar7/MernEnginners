@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa6";
 import teamImage from "../assets/team.jpg";
@@ -32,16 +33,13 @@ export default function OurServices() {
     >
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 lg:gap-12 mb-10 md:mb-16">
         <div className="flex-shrink-0">
-        
-
-        <Heading
+          <Heading
             level={1}
             variant="hero"
             tag="Our Services"
             firstText="Discover Our"
             secondText="Digital Solutions"
           />
-
         </div>
 
         <div className="flex items-start space-x-4 lg:w-2/5 lg:pt-11">
@@ -82,23 +80,27 @@ export default function OurServices() {
                 </div>
               </div>
 
-              <button
-                onClick={() =>
-                  setActive((prev) => (prev === service.id ? null : service.id))
-                }
-                className="text-black sm:px-6 sm:py-2.5 flex items-center gap-2 transition-all duration-300 group flex-shrink-0 self-start lg:self-center"
-              >
-                <span className="text-sm sm:text-base font-medium rounded-full bg-brand font-work px-5 py-2 bg-primary">
+              <div className="flex items-center gap-2 flex-shrink-0 self-start lg:self-center">
+                <Link
+                  to={service.link}
+                  className="text-sm sm:text-base font-medium rounded-full bg-brand font-work px-5 py-2 bg-primary text-black sm:px-6 sm:py-2.5 transition-all duration-300"
+                >
                   Learn More
-                </span>
-                <motion.span
+                </Link>
+
+                <motion.button
+                  onClick={() =>
+                    setActive((prev) =>
+                      prev === service.id ? null : service.id
+                    )
+                  }
                   animate={{ rotate: active === service.id ? 90 : 0 }}
                   transition={{ duration: 0.3 }}
                   className="w-5 h-5 sm:w-6 sm:h-6 bg-black text-white flex items-center justify-center rounded-full text-sm group-hover:scale-110 transition-transform duration-300"
                 >
                   <FaArrowRight />
-                </motion.span>
-              </button>
+                </motion.button>
+              </div>
             </div>
 
             <AnimatePresence>
