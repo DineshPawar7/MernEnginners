@@ -6,10 +6,11 @@
       "Full-Stack JavaScript Solutions",
       "E-Commerce Platforms",
       "Custom CRM Systems",
-      "Admin Dashboards"
+      "Admin Dashboards" 
     ],
     "content": "Harness the power of the MERN stack (MongoDB, Express, React, Node.js) to build high-performance, scalable web applications. We specialize in e-commerce systems, dynamic dashboards, and custom enterprise solutions.",
-    "link": "/merndevelopment"
+    "link": "/merndevelopment",
+    "image": "mern.jpg"
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
       "Responsive Frontend Design"
     ],
     "content": "Delivering modern, responsive websites tailored for your business needs. We build fast-loading SPAs and full-featured websites using Angular, Vue, Laravel, and more.",
-    "link": "/websitedevelopment"
+    "link": "/websitedevelopment",
+    "image": "webdev.jpg"
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
       "Scalable Multi-Tenant Solutions"
     ],
     "content": "We craft robust SaaS platforms designed for scale. From subscription billing to user access control, our solutions are secure, maintainable, and built to grow with your business.",
-    "link": "/saasdevelopment"
+    "link": "/saasdevelopment",
+    "image": "saas.jpg"
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
       "Content & Feature Updates"
     ],
     "content": "Keep your website running smoothly and securely. Our ongoing maintenance services ensure optimal performance, regular updates, and proactive support.",
-    "link": "/websitemaintenance"
+    "link": "/websitemaintenance",
+    "image": "maintenance.jpg"
   },
   {
     "id": 5,
@@ -56,6 +60,7 @@
       "Third-party service integrations"
     ],
     "content": "Develop fast, secure, and scalable APIs tailored to your application needs. We offer REST and GraphQL API solutions with smooth third-party integrations.",
-    "link": "/apidevelopment"
+    "link": "/apidevelopment",
+    "image": "api.jpg"
   }
 ]

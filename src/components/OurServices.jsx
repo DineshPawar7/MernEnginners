@@ -2,9 +2,22 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa6";
-import teamImage from "../assets/team.jpg";
 import services from "../data/servicesData.json";
 import Heading from "../components/ui/Heading";
+
+import mernImg from "../assets/mern.png";
+import webdevImg from "../assets/webdev.jpeg";
+import saasImg from "../assets/saas.webp";
+import maintenanceImg from "../assets/web-maintain.jpg";
+import apiImg from "../assets/api-dev.webp";
+
+const serviceImages = {
+  "mern.jpg": mernImg,
+  "webdev.jpg": webdevImg,
+  "saas.jpg": saasImg,
+  "maintenance.jpg": maintenanceImg,
+  "api.jpg": apiImg,
+};
 
 export default function OurServices() {
   const [active, setActive] = useState(null);
@@ -117,9 +130,9 @@ export default function OurServices() {
                       {service.content}
                     </p>
                     <img
-                      src={teamImage}
+                      src={serviceImages[service.image]}
                       alt={`${service.title} visual representation`}
-                      className="rounded-xl w-full max-w-md lg:w-2/5 xl:w-1/3 object-cover self-center lg:self-start shadow-md mt-4 lg:mt-0"
+                      className="rounded-xl w-full max-w-md lg:w-2/5 xl:w-1/3 object-cover self-center lg:self-start shadow-md mt-4 lg:mt-0 border-2 border-border"
                     />
                   </div>
                 </motion.div>

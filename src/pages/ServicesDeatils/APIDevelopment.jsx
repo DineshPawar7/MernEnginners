@@ -2,6 +2,10 @@ import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import Breadcrumb from "../../components/ui/Breadcrumb";
 import Footer from "../../components/Footer";
+import { FaPlay } from "react-icons/fa";
+
+import apiImg from "../../assets/api-dev.webp";
+
 
 const APIDevelopment = () => {
   const breadcrumbPath = [
@@ -37,13 +41,13 @@ const APIDevelopment = () => {
                 className="cursor-pointer relative w-full"
               >
                 <img
-                  src="/src/assets/team.jpg"
+                  src={apiImg}
                   alt="API Development"
-                  className="rounded-3xl w-full"
+                  className="rounded-3xl w-full border-2 border-black"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 border-4 border-white rounded-full flex items-center justify-center bg-white">
-                    <div className="w-4 h-4 bg-brand rounded-full"></div>
+                  <div className="w-16 h-16 border-2 border-brand rounded-full flex items-center justify-center bg-black">
+                    <div className=" text-brand "> <FaPlay /></div>
                   </div>
                 </div>
               </div>
@@ -94,14 +98,21 @@ const APIDevelopment = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-          {[1, 2, 3].map((_, i) => (
-            <img
-              key={i}
-              src="/src/assets/team.jpg"
-              alt={`API Service ${i + 1}`}
-              className="rounded-lg w-full h-72 object-cover"
-            />
-          ))}
+          <img
+            src="https://appinventiv.com/wp-content/uploads/2018/05/api_development_process.webp"
+            alt="Maintenance Example 1"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
+          />
+          <img
+            src="https://colorwhistle.com/wp-content/uploads/2023/10/API-Types-Tools-Functions-and-Features-A-Developers-Guide-Benefits-ColorWhistle.jpg"
+            alt="Maintenance Example 2"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
+          />
+          <img
+            src="https://satsaiinfo.com/wp-content/uploads/2024/03/Must-Have-Features-of-an-Efficient-API-Development.jpg"
+            alt="Maintenance Example 3"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
+          />
         </div>
 
         <h3 className="font-roboto text-subTitle font-bold mb-4">

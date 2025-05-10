@@ -2,6 +2,9 @@ import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import Breadcrumb from "../../components/ui/Breadcrumb";
 import Footer from "../../components/Footer";
+import { FaPlay } from "react-icons/fa";
+
+import saasImg from "../../assets/saas.webp";
 
 const SaaSDevelopment = () => {
   const breadcrumbPath = [
@@ -37,13 +40,16 @@ const SaaSDevelopment = () => {
                 className="cursor-pointer relative w-full"
               >
                 <img
-                  src="/src/assets/team.jpg"
+                  src={saasImg}
                   alt="SaaS Development"
-                  className="rounded-3xl w-full"
+                  className="rounded-3xl w-full border-black border-2"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 border-4 border-white rounded-full flex items-center justify-center bg-white">
-                    <div className="w-4 h-4 bg-brand rounded-full"></div>
+                  <div className="w-16 h-16 border-2 border-brand rounded-full flex items-center justify-center bg-black">
+                    <div className=" text-brand ">
+                      {" "}
+                      <FaPlay />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -96,19 +102,19 @@ const SaaSDevelopment = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
           <img
-            src="/src/assets/team.jpg"
+            src="https://www.apriorit.com/wp-content/uploads/2022/05/SaaSDLC.jpg"
             alt="SaaS Example 1"
-            className="rounded-lg w-full h-72 object-cover"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
           />
           <img
-            src="/src/assets/team.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1F4LxuBvwWphvse1gdOdBeitI17qtFscWQw&s"
             alt="SaaS Example 2"
-            className="rounded-lg w-full h-72 object-cover"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
           />
           <img
-            src="/src/assets/team.jpg"
+            src="https://www.instinctools.com/wp-content/uploads/2023/07/saas-development-process_-secrets-to-crafting-a-winning-solution_03-1024x683.jpg"
             alt="SaaS Example 3"
-            className="rounded-lg w-full h-72 object-cover"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
           />
         </div>
 

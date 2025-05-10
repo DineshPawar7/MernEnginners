@@ -2,6 +2,9 @@ import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import Breadcrumb from "../../components/ui/Breadcrumb";
 import Footer from "../../components/Footer";
+import { FaPlay } from "react-icons/fa";
+
+import mernImg from "../../assets/mern.png";
 
 const WebsiteDevelopment = () => {
   const breadcrumbPath = [
@@ -37,13 +40,16 @@ const WebsiteDevelopment = () => {
                 className="cursor-pointer relative w-full"
               >
                 <img
-                  src="/src/assets/team.jpg"
+                  src={mernImg}
                   alt="Website Development"
-                  className="rounded-3xl w-full"
+                  className="rounded-3xl w-full border-2 border-black"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 border-4 border-white rounded-full flex items-center justify-center bg-white">
-                    <div className="w-4 h-4 bg-brand rounded-full"></div>
+                  <div className="w-16 h-16 border-2 border-brand rounded-full flex items-center justify-center bg-black">
+                    <div className=" text-brand ">
+                      {" "}
+                      <FaPlay />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -96,19 +102,19 @@ const WebsiteDevelopment = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
           <img
-            src="/src/assets/team.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBhGWHKoIMk7JqQOCZgNUfcQziTapqlCIcew&s"
             alt="Web Dev 1"
-            className="rounded-lg w-full h-72 object-cover"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
           />
           <img
-            src="/src/assets/team.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv5OALS2UUxuYZvcQjUcaQwunCD_ANXLW5Fv7MEOg4DVsoxsD8HP9lgPVwWkRRbhvrNZQ&usqp=CAU"
             alt="Web Dev 2"
-            className="rounded-lg w-full h-72 object-cover"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
           />
           <img
-            src="/src/assets/team.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzrI5xjCiViO1TYq00dyXP0AFnq2M-xuA5YA&s"
             alt="Web Dev 3"
-            className="rounded-lg w-full h-72 object-cover"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
           />
         </div>
 

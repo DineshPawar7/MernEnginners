@@ -2,6 +2,9 @@ import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import Breadcrumb from "../../components/ui/Breadcrumb";
 import Footer from "../../components/Footer";
+import { FaPlay } from "react-icons/fa";
+
+import mernImg from "../../assets/mern.png";
 
 const MERNDevelopment = () => {
   const breadcrumbPath = [
@@ -37,13 +40,16 @@ const MERNDevelopment = () => {
                 className="cursor-pointer relative w-full"
               >
                 <img
-                  src="/src/assets/team.jpg"
+                  src={mernImg}
                   alt="Mobile App Development"
-                  className="rounded-3xl w-full"
+                  className="rounded-3xl w-full border-black border-2"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 border-4 border-white rounded-full flex items-center justify-center bg-white">
-                    <div className="w-4 h-4 bg-brand rounded-full"></div>
+                  <div className="w-16 h-16 border-2 border-brand rounded-full flex items-center justify-center bg-black">
+                    <div className=" text-brand ">
+                      {" "}
+                      <FaPlay />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -98,19 +104,19 @@ const MERNDevelopment = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
           <img
-            src="http://localhost:5173/src/assets/team.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6AF5uTLFohYAQn4slxT5EY1_W91u6UsRM7Q&s"
             alt="Service 1"
-            className="rounded-lg w-full h-72 object-cover"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
           />
           <img
-            src="http://localhost:5173/src/assets/team.jpg"
+            src="https://miro.medium.com/v2/resize:fit:960/1*ytTJyQrR9ZCNW-HeNOIokQ.png"
             alt="Service 2"
-            className="rounded-lg w-full h-72 object-cover"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
           />
           <img
-            src="http://localhost:5173/src/assets/team.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5B7n2LeMs4dksWeye9MQ3vACM7Dc72aowfw&s"
             alt="Service 3"
-            className="rounded-lg w-full h-72 object-cover"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
           />
         </div>
 

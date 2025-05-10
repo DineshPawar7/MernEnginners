@@ -2,6 +2,10 @@ import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import Breadcrumb from "../../components/ui/Breadcrumb";
 import Footer from "../../components/Footer";
+import { FaPlay } from "react-icons/fa";
+
+import maintenanceImg from "../../assets/web-maintain.jpg";
+
 
 const WebsiteMaintenance = () => {
   const breadcrumbPath = [
@@ -37,15 +41,15 @@ const WebsiteMaintenance = () => {
                 className="cursor-pointer relative w-full"
               >
                 <img
-                  src="/src/assets/team.jpg"
+                  src={maintenanceImg}
                   alt="Website Maintenance"
-                  className="rounded-3xl w-full"
+                  className="rounded-3xl w-full border-black border-2"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 border-4 border-white rounded-full flex items-center justify-center bg-white">
-                    <div className="w-4 h-4 bg-brand rounded-full"></div>
-                  </div>
-                </div>
+                                  <div className="w-16 h-16 border-2 border-brand rounded-full flex items-center justify-center bg-black">
+                                    <div className=" text-brand "> <FaPlay /></div>
+                                  </div>
+                                </div>
               </div>
             )}
           </div>
@@ -95,19 +99,19 @@ const WebsiteMaintenance = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
           <img
-            src="/src/assets/team.jpg"
+            src="https://techbullion.com/wp-content/uploads/2025/02/Top-10-Key-Benefits-of-Website-Maintenance-Services-text-img-01-2.webp"
             alt="Maintenance Example 1"
-            className="rounded-lg w-full h-72 object-cover"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
           />
           <img
-            src="/src/assets/team.jpg"
+            src="https://cms.rejoicehub.com/uploads/The_Benefits_of_Website_Maintenance_Services_1_109bcfa0d6.webp"
             alt="Maintenance Example 2"
-            className="rounded-lg w-full h-72 object-cover"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
           />
           <img
-            src="/src/assets/team.jpg"
+            src="https://media.excellentwebworld.com/wp-content/uploads/2024/12/30061448/Types-of-Website-Maintenance.webp"
             alt="Maintenance Example 3"
-            className="rounded-lg w-full h-72 object-cover"
+            className="rounded-lg w-full h-72 object-cover border-2 border-black"
           />
         </div>
 
